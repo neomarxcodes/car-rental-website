@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -491,7 +491,7 @@ header {
 
 .testimonial {
   background: white;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0,08);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0, 08);
   max-width: 540px;
   width: 100%;
   display: flex;
@@ -614,24 +614,30 @@ header {
   gap: 8px;
 }
 
-.footer__company__title, .footer__hours__title, .footer__email__title {
+.footer__company__title,
+.footer__hours__title,
+.footer__email__title {
   font-size: 24px;
   text-transform: uppercase;
 }
 
-.footer__company__links, .footer__hours__list, .footer__email__form {
+.footer__company__links,
+.footer__hours__list,
+.footer__email__form {
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 100%;
 }
 
-.footer__intro__link, .footer__company__link {
+.footer__intro__link,
+.footer__company__link {
   color: var(--black);
   transition: 300ms ease;
 }
 
-.footer__intro__link:hover, .footer__company__link:hover {
+.footer__intro__link:hover,
+.footer__company__link:hover {
   color: var(--primary);
 }
 
@@ -656,6 +662,191 @@ header {
   transition: 300ms ease;
 }
 
+.footer__email__form__submit:hover {
+  background-color: rgb(250, 66, 38);
+  box-shadow: rgba(255, 83, 48, 0.5) 0px 10px 15px 0px;
+}
+
+/* Models Page */
+
+/* Hero */
+#hero {
+  background-image: url("assets/hero-bg.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 410px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.hero__row {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.hero__title {
+  font-size: 36px;
+}
+
+.hero__subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Models */
+#models {
+  min-height: 50vh;
+}
+
+.models__row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.models__header,
+.models__list {
+  display: flex;
+}
+
+.models__header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.models__header__title {
+  font-size: 28px;
+}
+
+.models__header__sort {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  height: 40px;
+  max-width: 200px;
+  width: 100%;
+  outline: none;
+  background-color: white;
+}
+
+.models__header__sort__option {
+  padding: 0 24px;
+  background-color: white;
+}
+
+.models__list {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.model {
+  width: calc(33.3333% - 16px);
+  border: 1px #d5d5d5 solid;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model__img {
+  width: 100%;
+  border-radius: 4px;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+}
+
+.model__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model__details__name {
+  font-size: 20px;
+}
+
+.model__details__price {
+  font-size: 24px;
+}
+
+.model__details__price__span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.model__details-2 {
+  flex-wrap: wrap;
+  gap: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px #d5d5d5 solid;
+}
+
+.model__detail {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.model__detail-right {
+  justify-content: end;
+}
+
+.model__btn {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 300ms ease;
+  background-color: var(--primary);
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.model__btn:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+}
+
+.models__list__spinner {
+  font-size: 40px;
+  margin: 0 auto;
+  animation: loading-spinner 1000ms infinite;
+}
+
+@keyframes loading-spinner {
+  0%{
+    rotate: 0deg;
+  }100%{
+    rotate: 360deg;
+  }
+}
+
+/* XL Screens */
 @media (max-width: 1280px) {
   .footer__row {
     gap: 48px;
@@ -664,14 +855,20 @@ header {
   .footer__content {
     width: 40%;
   }
+
+  .model {
+    width: calc(50% - 16px);
+  }
 }
 
+/* LG Screens */
 @media (max-width: 1024px) {
   .nav__menu {
     display: block;
   }
 
-  .nav__links, .nav__buttons {
+  .nav__links,
+  .nav__buttons {
     display: none;
   }
 
@@ -711,6 +908,7 @@ header {
   }
 }
 
+/* Tablets - MD Screens */
 @media (max-width: 768px) {
   #download {
     background-image: none;
@@ -734,7 +932,8 @@ header {
     width: 100%;
   }
 
-  .header__bg, .header__img__wrapper {
+  .header__bg,
+  .header__img__wrapper {
     display: none;
   }
 
@@ -746,6 +945,10 @@ header {
     align-items: center;
     text-align: center;
   }
+
+  .model {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -754,8 +957,13 @@ header {
     align-items: center;
     text-align: center;
   }
+
+  .models__header {
+    flex-direction: column;
+  }
 }
 
+/* SM Screens */
 @media (max-width: 480px) {
   .header__text__buttons {
     flex-direction: column;
@@ -780,5 +988,20 @@ header {
     align-items: center;
     gap: 0px;
   }
-}
 
+  .model__details-1 {
+    flex-direction: column;
+  }
+
+  .model__details__name {
+    font-size: 20px;
+  }
+
+  .model__details__price {
+    font-size: 22px;
+  }
+
+  .model__detail {
+    font-size: 14px;
+  }
+}
